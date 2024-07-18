@@ -6,6 +6,7 @@ import (
 	"path"
 	"strings"
 )
+
 func mainHandler(w http.ResponseWriter, r *http.Request) {
     // Sanitize the path to prevent directory traversal
     cleanedPath := path.Clean(r.URL.Path)
